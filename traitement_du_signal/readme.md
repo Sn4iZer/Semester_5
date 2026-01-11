@@ -1,12 +1,6 @@
 
 ## Question 1: Signal Creation and Time-Domain Visualization
 
-### Description
-In this question, we create a signal using NumPy and display it in the time domain using Matplotlib.  
-The goal is to generate the signal, define its time axis, and visualize it clearly.
-
----
-
 ### Code Explanation
 
 
