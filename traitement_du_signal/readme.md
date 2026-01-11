@@ -59,3 +59,85 @@ plt.show()
 - A time-domain plot showing the signal over one second.
 - The signal appears as a smooth waveform with visible variations.
 - The plot is clearly labeled and easy to understand.
+
+
+## Question 2: 1D Fourier Transform and Frequency Visualization
+
+### Code Explanation
+
+- **Import libraries and function**
+  
+```bash
+from ressources1 import fourier1D
+```
+
+fourier1D is imported from an external file and used to compute and display the Fourier transform.
+
+```bash
+s = 1 + np.cos(2*np.pi*5*t) + 0.3*np.cos(2*np.pi*9*t)
+```
+The signal is built and stored in the variable s.
+
+This is the same signal used in Question 1.
+
+Apply the Fourier transform
+
+```bash
+fourier1D(s, SR)
+```
+The signal and the sampling rate are passed to the fourier1D function.
+
+The function computes the Fourier transform internally.
+
+The frequency spectrum is automatically displayed.
+
+Inside the fourier1D Function
+Get signal size
+
+```bash
+N = len(s)
+```
+The number of samples in the signal is stored.
+
+Compute the Fourier transform
+
+```bash
+a = np.abs(np.fft.fftshift(np.fft.fft(s))) / N
+```
+The Fourier transform is computed.
+
+The result is centered and converted to amplitudes.
+
+The output is normalized using the signal length.
+
+Create the frequency axis
+
+```bash
+x = fe * (np.arange(-np.floor(n), np.ceil(n))) / N
+```
+A frequency axis is generated.
+
+This axis matches the transformed signal.
+
+Display the spectrum
+
+```bash
+plt.bar(x, a)
+plt.xlabel('Fréquence (Hz)')
+plt.ylabel('Amplitude')
+plt.title('Spectre de Fourier')
+plt.grid(True)
+plt.show()
+```
+
+The frequency spectrum is displayed using a bar plot.
+
+Labels, title, and grid are added for clarity.
+
+Output : 
+A frequency-domain plot is displayed.
+
+The plot shows the main frequency components of the signal.
+
+Peaks appear at specific frequencies, representing the signal content.
+
