@@ -60,6 +60,9 @@
 - The signal appears as a smooth waveform with visible variations.
 - The plot is clearly labeled and easy to understand.
 
+- <img width="635" height="477" alt="image" src="https://github.com/user-attachments/assets/d0f51411-a473-4c68-b67a-7ca94cd87e3c" />
+
+
 
 ## Question 2: 1D Fourier Transform and Frequency Visualization
 
@@ -144,6 +147,9 @@
 
 - Peaks appear at specific frequencies, representing the signal content.
 
+- <img width="624" height="470" alt="image" src="https://github.com/user-attachments/assets/45e12bef-ae85-4fdd-8e2b-1846b966fd77" />
+
+
 
 ## Question 3: Zero-Padding and Fourier Transform Resolution
 
@@ -183,6 +189,9 @@
 - No new frequency components are created.
 
 - The frequency resolution is visually improved due to the increased signal length.
+
+- <img width="625" height="468" alt="image" src="https://github.com/user-attachments/assets/600776d0-ee24-4f22-a281-9fc38bee6659" />
+
 
 
 ## Question 4: Low-Pass Filtering and Signal Reconstruction
@@ -246,3 +255,6 @@
 - High-frequency components are removed in the filtered signal.
 
 - The filtered signal is smoother and slower, keeping only the low frequencies.
+
+- <img width="624" height="462" alt="image" src="https://github.com/user-attachments/assets/44d178e9-adb5-41b6-a1cf-98be5df9c37a" />
+
