@@ -51,10 +51,11 @@ Les individus avec la meilleure fitness sont choisis comme parents.
 Deux parents échangent une partie de leurs chromosomes pour créer de nouveaux individus.
 
 **Exemple :**
-Parent 1 : 111|00
-Parent 2 : 101|01
-Enfants : 11101, 10100
-
+``` bash
+      Parent 1 : 111|00
+      Parent 2 : 101|01
+      Enfants : 11101, 10100
+```
 
 ---
 
